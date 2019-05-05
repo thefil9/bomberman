@@ -1,4 +1,4 @@
-extends TileMap
+ extends TileMap
 
 var _sparks = load("res://Board/explosionParticle.tscn")
 var _bomb = load("res://Board/bomb.tscn")
@@ -22,15 +22,15 @@ func spawnPowerUP(pos):
 	if (randi() % 100) < 50: #50% szans ze wypadnie powerup
 		var type = randi() % 3
 		if type == 0:
-			var powerup = preload("res://Player//MoreBombs.tscn").instance()
+			var powerup = load("res://Player//MoreBombs.tscn").instance()
 			powerup.position = pos
 			get_parent().add_child(powerup)
 		elif type == 1:
-			var powerup = preload("res://Player//BetterBombs.tscn").instance()
+			var powerup = load("res://Player//BetterBombs.tscn").instance()
 			powerup.position = pos
 			get_parent().add_child(powerup)
 		elif type == 2:
-			var powerup = preload("res://Player//SpeedUP.tscn").instance()
+			var powerup = load("res://Player//SpeedUP.tscn").instance()
 			powerup.position = pos
 			get_parent().add_child(powerup)
 
