@@ -18,6 +18,13 @@ _global_script_class_icons={
 config/name="Bomberman"
 run/main_scene="res://GUI/MainMenuScene.tscn"
 
+[autoload]
+
+ConfigurationNode="*res://ConfigurationNode.tscn"
+Sounds="*res://Sounds/Sounds.tscn"
+Highscore="*res://Highscore/Highscore.tscn"
+SoundSettings="*res://GUI/SoundSettings.tscn"
+
 [display]
 
 window/size/width=960
